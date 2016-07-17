@@ -222,6 +222,8 @@ extern void user_support_remove(struct hub_user* user, int fourcc);
 
 extern const char* user_get_address(struct hub_user* user);
 
+extern const char* user_get_cid(struct hub_user* user);
+
 /**
  * Sets the nat override flag for a user, this allows users on the same
  * subnet as a natted hub to spoof their IP in order to use active mode

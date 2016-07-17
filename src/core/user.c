@@ -353,3 +353,8 @@ const char* user_get_address(struct hub_user* user)
 {
 	return ip_convert_to_string(&user->id.addr);
 }
+
+const char* user_get_cid(struct hub_user* user)
+{
+	return &user->id.cid;
+}
